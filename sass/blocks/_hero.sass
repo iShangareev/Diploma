@@ -1,12 +1,20 @@
 .hero 
   font-family: 'Open Sans', sans-serif
   .container
+    background-image: linear-gradient(to right, #dadada 37%, rgba(255,255,255,0) 57%),url(../img/hero-image.jpg);
+    //  background-image: linear-gradient(to left, #dadadad9 0%, #E8EAE9 100%), url(../img/hero-image.jpg)
+    // background-image: url(../img/hero-image.jpg)
+    background-repeat: no-repeat
+    background-position: right
+    background-position: 160% 100% 
+    background-color: #E8EAE9
+    border-radius: 8px
+  &__container
     max-width: 1280px  
     padding: 62px 0px 46px 107px
-    background-image: url(../img/hero-image.jpg)
     border-radius: 8px
   &__box  
-    max-width: 673px
+    max-width: 587px
     &-tag
       border-radius: 2000px
       border: none
@@ -20,6 +28,7 @@
       color: #36B37E  
       background: #ecf8f4
     &-title
+      width: 89%
       font-family: HK Grotesk
       font-style: normal
       font-weight: bold
