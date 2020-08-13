@@ -11,22 +11,84 @@
       &__button
         &-text
           font-size: 14px
+  .hero
+    .container
+      background-position: 7% 100%
+    &__container
+      padding: 38px 0px 46px 23px
+    &__box
+      &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        letter-spacing: 0.2px
+  .collection
+    margin-top: 80px
+    &__wrapper
+      flex-direction: column
+      &__right
+        margin-top: 40px
+        margin-left: 0
+        &-title
+          font-family: HK Grotesk, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 48px
+          line-height: 60px
+          margin-bottom: 16px
+        &-text
+          font-family: Open Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 36px
+          margin-bottom: 30px
 @media (max-width: 768px)
   .container,
-    max-width: 700px
+    max-width: 710px
+  .logo__image
+    margin-left: 43px
+    margin-top: 5px
   .navbar
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      top: 72px
+      right: 0
+      bottom: 0
+      background-color: white
+      &--visible
+        display: block
     &-top
+      height: 64px
+      display: flex
+      align-items: center
+      margin-top: 8px
       &__menu-button
         display: flex
+        margin-bottom: 2px
+        margin-right: 10px
+        z-index: 150
     &-menu
-      display: none
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
     &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
       &_hidden
   .menu
     &-button 
-      width: 16px
+      width: 17px
       height: 17px
       padding: 0
+      margin-top: 9px
       display: flex
       align-items: center
       justify-content: center
@@ -40,3 +102,45 @@
         width: 22px
         height: 2px
         background-color: #3A4C66  
+  .hero
+    .container
+      margin-top: 104px
+      background-position: 11% 1%
+    &__container
+      padding: 38px 0px 36px 31px
+    &__box
+      &-title
+        width: 75%
+        font-size: 48px
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+      &-info
+        width: 74%
+        font-size: 18px
+        line-height: 32px
+        margin-top: 16px
+        margin-bottom: 36px
+    &__button
+      padding: 16px 41px
+      margin-bottom: 38px
+    &__icons
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      &-items
+        margin-right: 12px
+  .collection
+    &__wrapper
+      &__left
+        margin-left: 35px
+      &__right
+        margin-left: 31px
+        &-title
+          font-family: HK Grotesk, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 48px
+          line-height: 60px
