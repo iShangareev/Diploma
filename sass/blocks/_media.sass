@@ -285,11 +285,14 @@
     margin-left: 29px
     margin-top: 9px
   .navbar
-    min-width: 320px
+    width: 320px
     .container
       width: 100%
+      height: 88px
       margin: 0
+      padding-bottom: 36px
     &-top
+      
       &__menu-button
         margin-right: 20px
     &-bottom
@@ -301,6 +304,8 @@
       border-radius: 0
       background-image: linear-gradient(to top, #dadada 37%, rgba(255,255,255,0) 57%),url(../img/hero-image.jpg)
       background-position: 70% 1%
+      margin-top: 80px
+      margin-bottom: 66px
     &__container
       display: flex
       flex-direction: column
@@ -310,7 +315,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      padding-top: 376px 
+      padding-top: 384px 
       &-tag
       &-title
         font-size: 32px
@@ -318,15 +323,23 @@
         text-align: center
         width: 100%
         margin-left: 0
+        margin-top: 16px
       &-info
+        width: 81%
         font-size: 16px
         line-height: 28px
         text-align: center
+        margin-top: 21px
+        margin-bottom: 23px
     &__button
       margin: auto
+      padding: 11px 41px
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
     &__icons
       margin-top: 24px
-      margin-bottom: 50px
+      margin-bottom: 24px
       display: flex
       align-items: center
       flex-direction: row
@@ -343,6 +356,54 @@
         display: flex
         align-items: center
         align-self: center
+        margin-top: 0px
+  .trend__header-list-item
+    margin-right: 12px
+  .collection
+    margin-top: 40px
+    &__wrapper
+      &__left
+        flex-direction: column
+        margin: 0 0 27px 0
+        &-nomain
+          display: flex
+          flex-direction: row
+          margin: auto
+          margin-top: 20px
+          margin-top: 13px
+        &-img--2
+          width: 138px
+          height: 97px
+          margin: auto
+        &-img--3
+          width: 138px
+          height: 97px
+          margin-top: 0
+          margin: auto
+        &-main
+          width: 290px
+          height: 300px
+          margin: auto
+        &-img--1
+          width: 290px
+          height: 300px
+      &__right
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: auto
+        &-title
+          font-size: 28px
+          margin-bottom: 0
+        &-text
+          width: 91%
+          font-size: 16px
+          line-height: 28px
+          text-align: center
+        &-link
+          text-align: center
+          margin: auto
+          font-size: 16px
 @media (max-width: 430px)
   .hero
     &__icons
@@ -372,4 +433,4 @@
       margin-left: 5px
       &-last
         margin-left: 100px
-        margin-top: 40px
+        margin-top: 0px
