@@ -142,131 +142,271 @@
         <div class="trend__header">
           <h3 class="trend__header-title">Trending Items</h3>
           <ul class="trend__header-list">
-            <li class="trend__header-list-item">New Arrival</li>
-            <li class="trend__header-list-item">Best Sellers</li>
-            <li class="trend__header-list-item">Upcoming</li>
+            <li
+              data-target="#new"
+              class="trend__header-list-item trend__header-list-item--active"
+            >
+              New Arrival
+            </li>
+            <li data-target="#best" class="trend__header-list-item">
+              Best Sellers
+            </li>
+            <li data-target="#up" class="trend__header-list-item">Upcoming</li>
           </ul>
         </div>
-        <div class="trend__box">
-          <!-- /.trend__header -->
-          <div class="trend__box__item">
-            <img src="img/minimal.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Minimalist Style</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$25.7</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+        <div id="new" class="content__item content__item--active">
+          <div class="trend__box">
+            <!-- /.trend__header -->
+            <div class="trend__box__item">
+              <img src="img/minimal.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Minimalist Style</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$25.7</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/lux.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Luxury Gown</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$30.6</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/lux.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Luxury Gown</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$30.6</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/full.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Full Coloristy</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$25.7</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/full.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Full Coloristy</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$25.7</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/pinky.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Pinky Winky</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$109</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/pinky.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Pinky Winky</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$109</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/holiday.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Holiday Vibes</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$51.2</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/holiday.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Holiday Vibes</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$51.2</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/swagie.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Swaggie Shaggy</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$81.3</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/swagie.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Swaggie Shaggy</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$81.3</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
-          </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item">
-            <img src="img/red.png" alt="" class="trend__box__item-img" />
-            <h4 class="trend__box__item-title">Red Formal</h4>
-            <div class="trend__box__item-costs">
-              <span class="trend__box__item-cost">$66.8</span
-              ><a href="" class="trend__box__item-buy"
-                ><img
-                  src="/img/shopping-cart.svg"
-                  alt=""
-                  class="trend__box__item-buy--img"
-              /></a>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/red.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Red Formal</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$66.8</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
             </div>
-            <!-- /.trend__box__item-cost -->
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item-more">
+              <img
+                src="/img/plus.svg"
+                alt=""
+                class="trend__box__item-more--icon"
+              />
+              <a href="" class="trend__box__item-more--link"
+                >See More Collection
+              </a>
+            </div>
+            <!-- /.trend__box__item -->
           </div>
-          <!-- /.trend__box__item -->
-          <div class="trend__box__item-more">
-            <img
-              src="/img/plus.svg"
-              alt=""
-              class="trend__box__item-more--icon"
-            />
-            <a href="" class="trend__box__item-more--link"
-              >See More Collection
-            </a>
-          </div>
-          <!-- /.trend__box__item -->
+          <!-- /.trend__box -->
         </div>
-        <!-- /.trend__box -->
+        <!-- content__new -->
+        <div id="best" class="content__item">
+          <div class="trend__box">
+            <!-- /.trend__header -->
+            <div class="trend__box__item">
+              <img src="img/minimal.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Minimalist Style</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$25.7</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/lux.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Luxury Gown</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$30.6</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/full.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Full Coloristy</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$25.7</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/pinky.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Pinky Winky</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$109</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+          </div>
+          <!-- /.trend__box -->
+        </div>
+        <!-- content__best -->
+        <div id="up" class="content__item">
+          <div class="trend__box">
+            <!-- /.trend__header -->
+            <div class="trend__box__item">
+              <img src="img/holiday.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Holiday Vibes</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$51.2</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/swagie.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Swaggie Shaggy</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$81.3</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item">
+              <img src="img/red.png" alt="" class="trend__box__item-img" />
+              <h4 class="trend__box__item-title">Red Formal</h4>
+              <div class="trend__box__item-costs">
+                <span class="trend__box__item-cost">$66.8</span
+                ><a href="" class="trend__box__item-buy"
+                  ><img
+                    src="/img/shopping-cart.svg"
+                    alt=""
+                    class="trend__box__item-buy--img"
+                /></a>
+              </div>
+              <!-- /.trend__box__item-cost -->
+            </div>
+            <!-- /.trend__box__item -->
+            <div class="trend__box__item-more">
+              <img
+                src="/img/plus.svg"
+                alt=""
+                class="trend__box__item-more--icon"
+              />
+              <a href="" class="trend__box__item-more--link"
+                >See More Collection
+              </a>
+            </div>
+            <!-- /.trend__box__item -->
+          </div>
+          <!-- /.trend__box -->
+        </div>
+        <!-- content__upcoming -->
       </div>
       <!-- /.container -->
     </section>

@@ -31,6 +31,9 @@
       margin: 0
       &-item
         margin-left: 38px
+        cursor: pointer
+      &-item--active
+        color: $text-title
   &__box
     display: flex
     flex-direction: row
@@ -90,3 +93,7 @@
           color: white  
           text-decoration: none
           text-align: center
+.content__item
+  display: none
+.content__item--active
+  display: block 
