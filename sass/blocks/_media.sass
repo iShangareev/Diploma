@@ -72,7 +72,7 @@
   .container,
     max-width: 710px
   .logo__image
-    margin-left: 43px
+    margin-left: 31px
     margin-top: 5px
   .navbar
     &-bottom
@@ -90,10 +90,11 @@
       display: flex
       align-items: center
       margin-top: 8px
+      margin-right: 12px
       &__menu-button
         display: flex
         margin-bottom: 2px
-        margin-right: 20px
+        margin-right: 34px
         z-index: 150
     &-menu
       flex-direction: column
@@ -131,7 +132,7 @@
       margin-top: 104px
       background-position: 11% 1%
     &__container
-      padding: 38px 0px 36px 31px
+      padding: 38px 0px 36px 18px
     &__box
       &-title
         width: 75%
@@ -159,25 +160,22 @@
   .collection
     &__wrapper
       &__left
-        margin-left: 35px
-        flex-wrap: wrap
-        flex-direction: row
+        margin-left: 18px
         &-main
           width: 100%
         &-img--1
           width: 100%
         &-img--2
-          width: 45%
-        &-img--3
-          margin-left: 20px
-          width: 45%
+          width: 94%
+        &-img--3        
+          width: 94%
         &-nomain
+          display: flex
+          flex-direction: column
           width: 100%
           height: 100%
-          
-
       &__right
-        margin-left: 31px
+        margin-left: 19px
         &-title
           font-family: HK Grotesk, sans-serif
           font-style: normal
@@ -186,19 +184,21 @@
           line-height: 60px
   .trend
     margin-top: 79px
+    margin-bottom: 40px
     &__header
       display: flex
       flex-direction: column
+      margin-bottom: 55px
       &-title
         font-family: HK Grotesk, sans-serif
         font-style: normal
         font-weight: bold
         font-size: 48px
         line-height: 60px
-        margin-left: 46px
+        margin-left: 20px
       &-list
         margin-top: 29px
-        padding-left: 72px
+        padding-left: 46px
         &-item
           margin-left: 0
           margin-right: 38px
@@ -210,17 +210,32 @@
       // width: 82%
       // margin: auto
       justify-content: space-around
-      margin-left: 31px
+      margin-left: 17px
+      margin: 0 30px
       &__item
         // margin-left: 68px
         &-title
-          margin-left: 14px
+          margin-left: 9px
         &-img
           width: 280px
           height: 350px
+          margin-bottom: 14px
         &-costs
-          margin-left: 14px
-          margin-bottom: 42px
+          margin-left: 10px
+          margin-bottom: 50px
+        &-more
+          width: 280px
+          &--link
+            margin-top: 15px
+        &-buy
+          margin-right: 12px
+  .reviews
+    &__wrapper
+      &-comma
+        margin-bottom: 21px
+      &-text
+        width: 81%
+        margin-bottom: 36px
 @media (max-width: 576px)
   .logo__image
     margin-left: 29px
