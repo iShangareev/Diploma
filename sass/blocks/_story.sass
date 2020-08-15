@@ -2,8 +2,19 @@
   margin-bottom: 126px
   .container
     display: flex
+  &__box
+    display: flex
+    width: 837px
+    margin-left: 314px
+    margin-right: 50px
+    margin-top: 10px
   &__slider
-    width: 50%
+    width: 20%
+    padding-bottom: 43px
+    // overflow: hidden
+    background-color: white
+    position: absolute
+    z-index: 10
     &-tag
       font-family: Open Sans
       font-style: normal
@@ -17,7 +28,7 @@
       border: none
       padding: 6px 16px 
     &-title
-      idth: 70%
+      width: 89%
       font-family: HK Grotesk, sans-serif
       font-style: normal
       font-weight: bold
@@ -26,7 +37,7 @@
       letter-spacing: 0.2px
       color: $text-title
       margin: 0
-      margin-top: 28px
+      margin-top: 38px
       margin-bottom: 24px
     &-text
       width: 99%
@@ -37,7 +48,7 @@
       line-height: 36px
       color: $text-normal
       margin: 0
-      margin-bottom: 42px
+      margin-bottom: 48px
     &-button
       &-left
         outline: none
@@ -48,8 +59,9 @@
         border: none
         background-color: white
   &__one
+    
     position: relative
-    margin-left: 96px
+    margin-left: 168px
     &-img 
       position: relative
       z-index: 1
@@ -61,6 +73,8 @@
         top: 10px
         z-index: 100
     &-text
+      padding-top: 19px
+      padding-left: 19px
       top: -27px
       left: 11px
       position: relative
@@ -81,9 +95,11 @@
         font-size: 16px
         line-height: 22px
       &--title
+        width: 92%
         margin: 0
         margin-bottom: 12px
   &__two
+    
     margin-left: 28px
     &-img
       img
@@ -92,6 +108,8 @@
         width: 312px
         height: 317px
     &-text
+      padding-left: 19px
+      padding-top: 19px
       top: -27px
       left: 11px
       position: relative
@@ -111,5 +129,8 @@
         font-size: 16px
         line-height: 22px
       &--title
+        width: 85%
         margin: 0
         margin-bottom: 12px
+  .swiper__c
+    overflow: hidden

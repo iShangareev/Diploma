@@ -42,3 +42,21 @@ var mySwiper = new Swiper(".swiper-container", {
   //   el: ".swiper-scrollbar",
   // },
 });
+
+var newSwiper = new Swiper(".swiper__c", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  updateOnWindowResize: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".story__slider-button-right",
+    prevEl: ".story__slider-button-left",
+  },
+
+  // // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+});
