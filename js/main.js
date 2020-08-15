@@ -31,16 +31,6 @@ var mySwiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 7000,
   },
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });
 
 var newSwiper = new Swiper(".swiper__c", {
@@ -54,9 +44,14 @@ var newSwiper = new Swiper(".swiper__c", {
     nextEl: ".story__slider-button-right",
     prevEl: ".story__slider-button-left",
   },
+});
 
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
+$("form").validate({
+  messages: {
+    name: "Please specify your name",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  },
 });
