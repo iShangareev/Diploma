@@ -249,39 +249,61 @@
         &-buy
           margin-right: 12px
   .reviews
-    margin-bottom: 69px
+    margin-bottom: 0
+    .container
+      padding-bottom: 71px
     &__wrapper
       &-comma
         margin-bottom: 21px
       &-text
-        width: 81%
+        width: 82%
         margin-bottom: 36px
+      &-author
+        margin-bottom: 53px
   .story
+    margin-bottom: 71px
     .container
+      position: relative
       flex-direction: row
       flex-wrap: wrap
       align-items: center
       margin: auto
+    &__box
+      position: relative
+      width: 738px
+      margin-left: 326px
     &__slider
+      left: 0
       width: 100%
       display: flex
       flex-direction: column
       align-items: center
-      margin-bottom: 30px
+      position: relative
+      padding-bottom: 22px
+      &-tag
+        margin-top: 77px
       &-title
         font-family: HK Grotesk, sans-serif
+        font-size: 48px
         margin-top: 25px
         margin-bottom: 15px
         letter-spacing: -1.8px
+        text-align: center
       &-text
         width: 77%
         text-align: center
         margin-bottom: 34px
+      &-button
+        margin-right: 38px
+        &-left
+          margin-right: 11px
     &__one
       max-width: 322px  
       display: flex
       flex-direction: column
       margin: auto
+      &-img
+
       &-text
         width: 95%
         padding-top: 19px
@@ -299,6 +321,10 @@
         &--title
           font-family: HK Grotesk, sans-serif
           width: 95%
+  .newsletter
+    .container
+      display: flex
+      flex-direction: column 
 @media only screen and (max-height: 374px)
   .navbar
     &-bottom
@@ -392,18 +418,19 @@
         &-nomain
           display: flex
           flex-direction: row
+          justify-content: center
           margin: auto
           margin-top: 20px
           margin-top: 13px
         &-img--2
           width: 138px
           height: 97px
-          margin: auto
+          margin: 0 5px
         &-img--3
           width: 138px
           height: 97px
           margin-top: 0
-          margin: auto
+          margin: 0 5px
         &-main
           width: 290px
           height: 300px
