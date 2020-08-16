@@ -39,6 +39,8 @@ var newSwiper = new Swiper(".swiper__c", {
   autoHeight: true,
   // If we need pagination
   updateOnWindowResize: true,
+  // width: 200,
+  // centeredSlides: true,
   // Navigation arrows
   navigation: {
     nextEl: ".story__slider-button-right",
