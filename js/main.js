@@ -5,13 +5,13 @@ menuButton.on("click", function () {
 
 $(document).ready(function () {
   var tabsItem = $(".trend__header-list-item");
-  var contentItem = $(".content__item");
+  var contentItem = $(".content-item");
 
   tabsItem.on("click", function (event) {
     var activeContent = $(this).attr("data-target");
     tabsItem.removeClass("trend__header-list-item--active");
-    contentItem.removeClass("content__item--active");
-    $(activeContent).addClass("content__item--active");
+    contentItem.removeClass("content-item--active");
+    $(activeContent).addClass("content-item--active");
     $(this).addClass("trend__header-list-item--active");
   });
 });
