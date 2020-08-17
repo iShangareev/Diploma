@@ -33,7 +33,7 @@ var mySwiper = new Swiper(".swiper-container", {
   },
 });
 
-var newSwiper = new Swiper(".swiper__box", {
+var newSwiper = new Swiper(".swiper-box", {
   // Optional parameters
   loop: false,
   autoHeight: true,
