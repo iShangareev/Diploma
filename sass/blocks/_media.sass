@@ -175,9 +175,10 @@
     &-bottom
       display: none
       position: fixed
-      left: 436px
-      top: 14px
-      right: 22px
+      width: 304px
+      height: 324px
+      top: 8px
+      right: 11px
       bottom: 226px
       background-color: white
       box-shadow: 0 0 10px rgba(0,0,0,0.5)
@@ -194,13 +195,23 @@
         margin-bottom: 2px
         margin-right: 34px
         z-index: 150
-    &-menu
+    &__close
+      display: none
+      position: absolute
+      right: 38px
+      top: 13px
+      z-index: 200
+    &-menu 
+      margin-top: 0
       flex-direction: column
       align-items: flex-start
+      padding: 37px 0
       &__item
-        margin-bottom: 20px
+        margin-bottom: 18px
+        margin-left: 26px
       &__button
-        padding: 8px 85px
+        margin-top: 4px
+        padding: 7px 90px
     &--mobile
       &_fixed
         position: fixed
@@ -987,9 +998,9 @@
       margin-top: -5px
       margin-left: 10px
       &__item
-        margin-left: 20px
+        margin-left: 15px
       &__button
-        margin-top: -6px
+        margin-top: 4px
         padding: 8px 90px
     &__close
       position: absolute
