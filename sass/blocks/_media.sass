@@ -27,12 +27,37 @@
         &-title
           font-family: HK Grotesk, sans-serif
   .story
+    .container
+      flex-direction: column
     &__slider
+      display: flex
+      flex-direction: column
       left: 118px
-      width: 25%
+      width: 100%
+      align-items: center
+      justify-content: center
+      &-title
+        width: 100%
+        text-align: center
+        text-align: center
+      &-text
+        width: 100%
+        text-align: center
     &__box
       width: 837px
       margin-left: 131px
+      margin: auto
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+    &__one
+      margin: 0 50px
+    &__two
+      margin: 0 50px
+  .swiper
+    &__box
+      width: 100%
+      margin: auto
 @media (max-width:1100px)
   .hero
     .container
@@ -92,6 +117,19 @@
           font-size: 20px
           line-height: 36px
           margin-bottom: 30px
+  .story
+    &__box
+      width: 750px
+      margin-left: 0
+    &__one
+      margin: 0 0px
+      margin-left: 20px
+      &-text
+        width: 87%
+    &__two  
+      margin: 0 0px
+      &-text
+        width: 87%
   .trend
     &__box
       max-width: 564px
@@ -417,7 +455,8 @@
         &--title
           font-family: HK Grotesk, sans-serif
           width: 95%
-  .newsletter 
+  .newsletter
+     
     .container
       flex-direction: column
       max-width: 768px
@@ -481,6 +520,18 @@
       padding-left: 33px
     &__logo
       margin-bottom: 13px
+@media (max-width: 710px)
+  .story
+    &__box
+      flex-direction: column
+    &__one
+      max-width: 342px
+    &__two
+      max-width: 342px
+  .swiper
+    &__box
+      // flex-direction: column
+
 @media only screen and (max-height: 374px)
   .navbar
     &-bottom
