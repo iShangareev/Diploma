@@ -35,7 +35,7 @@ var mySwiper = new Swiper(".swiper-container", {
 
 var newSwiper = new Swiper(".swiper__box", {
   // Optional parameters
-  loop: true,
+  loop: false,
   autoHeight: true,
   // If we need pagination
   updateOnWindowResize: true,
@@ -43,6 +43,9 @@ var newSwiper = new Swiper(".swiper__box", {
   // centeredSlides: true,
   // Navigation arrows
   navigation: {
+    // hiddenClass: ".story__slider-button-right",
+    // disabledClass: ".story__slider-button-right",
+    // lockClass: ".story__slider-button-right",
     nextEl: ".story__slider-button-right",
     prevEl: ".story__slider-button-left",
   },
