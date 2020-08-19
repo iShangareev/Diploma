@@ -52,15 +52,42 @@
             </li>
           </ul>
         </div>
-        <button class="menu-button navbar-top-button">
+        <button
+          data-toggle="modal"
+          class="menu-button navbar-top-button header__mobile-button"
+        >
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
         </button>
-        <!-- /.navbar-bottom -->
-        <!-- /.container -->
       </div>
     </header>
+    <div class="modal">
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"> <img src="img/close.svg" alt="" /></a>
+        <ul class="modal__menu">
+          <li class="modal__item">
+            <a href="#" class="modal__link">Home</a>
+          </li>
+          <li class="modal__item">
+            <a href="#" class="modal__link">Landings</a>
+          </li>
+          <li class="modal__item">
+            <a href="#" class="modal__link">Pages</a>
+          </li>
+          <li class="modal__item">
+            <a href="#" class="modal__link">Docs</a>
+          </li>
+          <li class="modal__item">
+            <a href="#" class="modal__link">Help</a>
+          </li>
+        </ul>
+        <!-- /.navbar-menu -->
+        <a href="#" class="modal__button">Get it now</a>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <section class="hero">
       <div class="container">
         <div class="hero__container">
@@ -150,10 +177,10 @@
               data-target="#new"
               class="trend__header-list-item trend__header-list-item--active"
             >
-              New Arrival
+              New&nbsp;Arrival
             </li>
             <li data-target="#best" class="trend__header-list-item">
-              Best Sellers
+              Best&nbsp;Sellers
             </li>
             <li data-target="#up" class="trend__header-list-item">Upcoming</li>
           </ul>

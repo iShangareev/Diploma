@@ -8,9 +8,9 @@ require 'phpmailer/Exception.php';
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новый подписчик";
+$title = "Subscription notice";
 $body = "
-<h2>Новый подписчик</h2>
+<h2>Thanks for joining ehya's newsletter</h2>
 <b>Почта:</b> $email<br>
 ";
 

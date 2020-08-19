@@ -1,7 +1,7 @@
-var menuButton = $(".menu-button");
-menuButton.on("click", function () {
-  $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-});
+// var menuButton = $(".menu-button");
+// menuButton.on("click", function () {
+//   $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+// });
 
 $(document).ready(function () {
   var tabsItem = $(".trend__header-list-item");
@@ -14,6 +14,26 @@ $(document).ready(function () {
     $(activeContent).addClass("content-item--active");
     $(this).addClass("trend__header-list-item--active");
   });
+});
+
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal);
+function openModal() {
+  var modalDialog = $(".modal__dialog");
+  modalDialog.addClass("modal__dialog--visible");
+}
+function closeModal(event) {
+  event.preventDefault();
+  var modalDialog = $(".modal__dialog");
+  modalDialog.removeClass("modal__dialog--visible");
+}
+$(document).keyup(function (e) {
+  if (e.keyCode == 27) {
+    var modalDialog = $(".modal__dialog");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
 });
 
 // Слайдер
@@ -51,6 +71,9 @@ var newSwiper = new Swiper(".swiper-box", {
   },
 });
 
+$.validator.methods.email = function (value, element) {
+  return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
+};
 $("form").validate({
   messages: {
     name: "Please specify your name",
@@ -60,3 +83,14 @@ $("form").validate({
     },
   },
 });
+
+// $(".form").each(function () {
+//   $(this).validate({
+//     errorClass: "invalid",
+//     messages: {
+//       email: {
+//         required: "Email is required",
+//       },
+//     },
+//   });
+// });
