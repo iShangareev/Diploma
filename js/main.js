@@ -1,8 +1,3 @@
-// var menuButton = $(".menu-button");
-// menuButton.on("click", function () {
-//   $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-// });
-
 $(document).ready(function () {
   var tabsItem = $(".trend__header-list-item");
   var contentItem = $(".content-item");
@@ -59,13 +54,8 @@ var newSwiper = new Swiper(".swiper-box", {
   autoHeight: true,
   // If we need pagination
   updateOnWindowResize: true,
-  // width: 200,
-  // centeredSlides: true,
-  // Navigation arrows
+
   navigation: {
-    // hiddenClass: ".story__slider-button-right",
-    // disabledClass: ".story__slider-button-right",
-    // lockClass: ".story__slider-button-right",
     nextEl: ".story__slider-button-right",
     prevEl: ".story__slider-button-left",
   },
@@ -84,13 +74,4 @@ $("form").validate({
   },
 });
 
-// $(".form").each(function () {
-//   $(this).validate({
-//     errorClass: "invalid",
-//     messages: {
-//       email: {
-//         required: "Email is required",
-//       },
-//     },
-//   });
-// });
+AOS.init();
